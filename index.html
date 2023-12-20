@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="de" data-bs-theme="light">
+<html lang="de">
     
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Haderner-Trophy Mannschaften Sommerturnier FCN">
         <title>Start :: Haderner-Trophy</title>
-        <link rel="stylesheet" href="CSS/mainstyle.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-                rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-                crossorigin="anonymous">
+		<link rel="stylesheet" href="CSS/hauptstyle.css">
     </head>
      <header>
-        <div class="conhead text-bg-dark">
-            <div class="conhead2">
-                <nav class="navi-header">
-                    <ul class="navi-liste">
-                        <li><a href="index.html" class="navi__link--aktuell navi__link">Start</a></li>
-                        <li><a href="mannschaften.html" class="navi__link">Mannschaften</a></li>
-                        <li><a href="#links.html" class="navi__link">Links</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        <nav class="navi-header">
+            <ul class="navi-liste">
+                <li><a href="index.html" class="navi__link__aktuell navi__link">Start</a></li>
+                <li><a href="mannschaften.html" class="navi__link">Teams</a></li>
+                <li><a href="links.html" class="navi__link">Links</a></li>
+				<li><a href="faqs.html" class="navi__link">FAQS</a></li>
+				<li><a href="ueber.html" class="navi__link">About</a></li>
+            </ul>
+        </nav>
         <div class="div1">
             <img class="div1__logo" src="Bilder/FCNLogo.jpg" alt="logo wappane fc neuhadern" width="512" height="512">
-            <h1><www class="div1__haderner-trophy">www.haderner-trophy.de</www></h1>
         </div>
+        <div class="div2">
+            <h1 class="div2__h1"><www class="div1__haderner-trophy text-3d-effect">www.haderner-trophy.de</www></h1>
+        </div>
+        <div id="matrixContainer" class="matrix-effect">
+        </div>
+
      </header>
         <main class="hauptteil">
             <article class="beitrag">
@@ -56,10 +56,16 @@
             <footer></footer>
             <ul>
             </ul>
+            <script src="js/hauptscript.js"></script>
 
+            <script>
+                // Stellen Sie sicher, dass das DOM vollständig geladen ist
+                document.addEventListener('DOMContentLoaded', () => {
+                    matrixEffect('matrixContainer', 'WILLKOMMEN BEI HADERNER TROPHY');
+                });
+            </script>
+        <
         </body>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </html>
 
    
